@@ -1,0 +1,4 @@
+#!bin/bash
+# Source this
+export GITHUB_CLIENT_ID=$(bw get username 'BackstagePlay Github Application')
+export GITHUB_CLIENT_SECRET=$(bw get password 'BackstagePlay Github Application')
