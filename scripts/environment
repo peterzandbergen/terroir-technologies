@@ -3,3 +3,5 @@
 export GITHUB_CLIENT_ID=$(bw get username 'BackstagePlay Github Application')
 export GITHUB_CLIENT_SECRET=$(bw get password 'BackstagePlay Github Application')
 export GITHUB_TOKEN=$(bw get item 'BackstagePlay Github Application' | yq -p json '.fields[0].value')
+export PG_SECRET=$(bw get item 'BackstagePlay Github Application' | yq -p json '.fields[1].value')
+export NODE_OPTIONS=--no-node-snapshot

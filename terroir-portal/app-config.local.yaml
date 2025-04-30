@@ -1,0 +1,26 @@
+# Backstage override configuration for your local development environment
+# The secrets are taken from the environment, which is sourced from scripts/environment
+# The secrets themselves are taken from Bitwarden, so it is safe to add 
+# this file to the repo
+backend:
+  database:
+    client: pg
+    connection:
+      host: localhost
+      port: 5432
+      user: postgres
+      password: ${PG_SECRET}
+auth:
+  environment: development
+  providers:
+    github:
+      development:
+        clientId: ${GITHUB_CLIENT_ID}
+        clientSecret: ${GITHUB_CLIENT_SECRET}
+        signIn:
+          resolvers:
+            - resolver: usernameMatchingUserEntityName
+integrations:
+  github:
+    - host: github.com
+      token: ${GITHUB_TOKEN}
