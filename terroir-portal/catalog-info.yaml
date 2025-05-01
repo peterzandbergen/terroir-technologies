@@ -9,7 +9,7 @@ metadata:
   #   backstage.io/techdocs-ref: dir:.
 spec:
   type: website
-  owner: peterzandbergen
+  owner: user:peterzandbergen
   lifecycle: experimental
 ---
 
