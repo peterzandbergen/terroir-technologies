@@ -3,7 +3,8 @@
   "packages": [
     "nodejs_20@latest",
     "yarn@latest",
-    "yq-go@latest"
+    "yq-go@latest",
+    "ripgrep@latest"
   ],
   "shell": {
     "init_hook": [

@@ -1,0 +1,3 @@
+#!bin/bash
+
+export PG_CONTAINER=bspg
